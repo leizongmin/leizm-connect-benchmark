@@ -1,4 +1,4 @@
-> Simple HTTP benchmark for different nodejs frameworks using wrk
+# Simple HTTP benchmark for different nodejs frameworks using wrk
 
 ## Prerequisites
 
@@ -6,14 +6,14 @@
 
 ## Installation
 
-```shell
-git clone git@github.com:hbakhtiyor/node-frameworks-benchmark.git && cd node-frameworks-benchmark
+```bash
+git clone git@github.com:leizongmin/leizm-connect-benchmark.git && cd leizm-connect-benchmark
 yarn [install]
 ```
 
 ## How to run or automatically it can run after `yarn install`
 
-```
+```bash
 make
 ```
 
@@ -23,7 +23,7 @@ After finish the make tasks, look at benchmarks.txt file or your console output.
 
 Simple HTTP benchmark results (wrk) with `close` connection
 
-```
+```text
 20220.47 Requests/sec - ukoa.js
 13594.83 Requests/sec - ufeathers.js
 12812.89 Requests/sec - uexpress.js
@@ -40,7 +40,7 @@ Simple HTTP benchmark results (wrk) with `close` connection
 
 Simple HTTP benchmark results (wrk) with `keep-alive` connection
 
-```
+```text
 54232.14 Requests/sec - uws.js
 21036.52 Requests/sec - ukoa.js
 13547.05 Requests/sec - ufeathers.js
