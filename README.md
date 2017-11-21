@@ -24,48 +24,51 @@ After finish the make tasks, look at benchmarks.txt file or your console output.
 Simple HTTP benchmark results (wrk) with `close` connection
 
 ```text
-20220.47 Requests/sec - ukoa.js
-13594.83 Requests/sec - ufeathers.js
-12812.89 Requests/sec - uexpress.js
-4204.16 Requests/sec - total/total.js
-3043.56 Requests/sec - rawnode.js
-2365.02 Requests/sec - feathers.js
-2242.12 Requests/sec - koa.js
-1784.28 Requests/sec - micro.js
-1698.33 Requests/sec - express.js
-1443.69 Requests/sec - restify.js
-512.29 Requests/sec - hapi.js
-158.26 Requests/sec - uws.js
+26882.24 Requests/sec - ukoa.js
+14892.25 Requests/sec - ufeathers.js
+13657.59 Requests/sec - uexpress.js
+5853.36 Requests/sec - micro.js
+5040.39 Requests/sec - leizm-connect.js
+5002.74 Requests/sec - rawnode.js
+4279.85 Requests/sec - koa.js
+3784.59 Requests/sec - total/total.js
+3509.53 Requests/sec - express.js
+3469.05 Requests/sec - feathers.js
+3025.51 Requests/sec - restify.js
+1261.24 Requests/sec - hapi.js
+1097.77 Requests/sec - sails/sails.js
+156.60 Requests/sec - uws.js
 ```
 
 Simple HTTP benchmark results (wrk) with `keep-alive` connection
 
 ```text
-54232.14 Requests/sec - uws.js
-21036.52 Requests/sec - ukoa.js
-13547.05 Requests/sec - ufeathers.js
-13213.85 Requests/sec - micro.js
-12514.36 Requests/sec - uexpress.js
-12427.84 Requests/sec - rawnode.js
-8597.81 Requests/sec - total/total.js
-7594.78 Requests/sec - koa.js
-5600.86 Requests/sec - express.js
-4775.49 Requests/sec - restify.js
-2959.22 Requests/sec - feathers.js
-1215.46 Requests/sec - sails/sails.js
-1077.86 Requests/sec - hapi.js
+31348.44 Requests/sec - uws.js
+27884.30 Requests/sec - ukoa.js
+14129.84 Requests/sec - uexpress.js
+14047.04 Requests/sec - ufeathers.js
+13352.23 Requests/sec - micro.js
+11644.37 Requests/sec - rawnode.js
+11088.41 Requests/sec - leizm-connect.js
+8334.33 Requests/sec - koa.js
+7588.25 Requests/sec - total/total.js
+6026.16 Requests/sec - express.js
+5370.37 Requests/sec - restify.js
+3443.71 Requests/sec - feathers.js
+1617.57 Requests/sec - hapi.js
+1508.43 Requests/sec - sails/sails.js
 ```
 
 ### Hardware used
 
-* Intel® Core™ i3-2310M CPU @ 2.10GHz × 4
-* 4Gb RAM
+* Virtual CPU a7769a6388d5 2394.454 MHz x 1
+* 1Gb RAM
 
 ### Version
 
-* Node v7.9.0
-* Ubuntu 17.04 LTS x86_64 OS
-* 4.10.0-20-generic kernel
+* Node v8.9.0
+* Ubuntu 16.04.4 LTS x86_64 OS
+* Linux version 4.4.0-87-generic
 
 ### Notes
 

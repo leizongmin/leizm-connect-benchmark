@@ -18,6 +18,7 @@ all:
 	@sort -nr results.txt | tee -a benchmarks.txt
 	@rm results.txt
 	@./run express.js keep-alive
+	@./run leizm-connect.js keep-alive
 	@./run hapi.js keep-alive
 	@./run rawnode.js keep-alive
 	@./run restify.js keep-alive
