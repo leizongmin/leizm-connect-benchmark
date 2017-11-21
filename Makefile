@@ -1,5 +1,6 @@
 all:
 	@./run express.js
+	@./run leizm-connect.js
 	@./run hapi.js
 	@./run rawnode.js
 	@./run restify.js
