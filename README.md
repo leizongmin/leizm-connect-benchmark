@@ -24,39 +24,41 @@ After finish the make tasks, look at benchmarks.txt file or your console output.
 Simple HTTP benchmark results (wrk) with `close` connection
 
 ```text
-26882.24 Requests/sec - ukoa.js
-14892.25 Requests/sec - ufeathers.js
-13657.59 Requests/sec - uexpress.js
-5853.36 Requests/sec - micro.js
-5040.39 Requests/sec - leizm-connect.js
-5002.74 Requests/sec - rawnode.js
-4279.85 Requests/sec - koa.js
-3784.59 Requests/sec - total/total.js
-3509.53 Requests/sec - express.js
-3469.05 Requests/sec - feathers.js
-3025.51 Requests/sec - restify.js
-1261.24 Requests/sec - hapi.js
-1097.77 Requests/sec - sails/sails.js
-156.60 Requests/sec - uws.js
+26152.90 Requests/sec - uleizm-connect.js
+22450.96 Requests/sec - ukoa.js
+12820.36 Requests/sec - ufeathers.js
+12134.07 Requests/sec - uexpress.js
+5513.99 Requests/sec - micro.js
+4959.12 Requests/sec - rawnode.js
+4602.40 Requests/sec - leizm-connect.js
+3675.19 Requests/sec - total/total.js
+3625.12 Requests/sec - koa.js
+3333.37 Requests/sec - express.js
+3175.13 Requests/sec - feathers.js
+2811.85 Requests/sec - restify.js
+1638.57 Requests/sec - hapi.js
+1066.74 Requests/sec - sails/sails.js
+159.65 Requests/sec - uws.js
 ```
 
 Simple HTTP benchmark results (wrk) with `keep-alive` connection
 
 ```text
-31348.44 Requests/sec - uws.js
-27884.30 Requests/sec - ukoa.js
-14129.84 Requests/sec - uexpress.js
-14047.04 Requests/sec - ufeathers.js
-13352.23 Requests/sec - micro.js
-11644.37 Requests/sec - rawnode.js
-11088.41 Requests/sec - leizm-connect.js
-8334.33 Requests/sec - koa.js
-7588.25 Requests/sec - total/total.js
-6026.16 Requests/sec - express.js
-5370.37 Requests/sec - restify.js
-3443.71 Requests/sec - feathers.js
-1617.57 Requests/sec - hapi.js
-1508.43 Requests/sec - sails/sails.js
+28487.77 Requests/sec - uleizm-connect.js
+28061.49 Requests/sec - uws.js
+24185.91 Requests/sec - ukoa.js
+12684.09 Requests/sec - micro.js
+12584.03 Requests/sec - uexpress.js
+12561.44 Requests/sec - ufeathers.js
+11023.34 Requests/sec - rawnode.js
+10139.57 Requests/sec - leizm-connect.js
+7993.16 Requests/sec - koa.js
+7133.59 Requests/sec - total/total.js
+5494.80 Requests/sec - express.js
+5235.98 Requests/sec - restify.js
+3451.93 Requests/sec - feathers.js
+2308.08 Requests/sec - hapi.js
+1343.64 Requests/sec - sails/sails.js
 ```
 
 ### Hardware used
