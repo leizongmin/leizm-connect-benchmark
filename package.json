@@ -9,7 +9,7 @@
     "postinstall": "make"
   },
   "dependencies": {
-    "@leizm/connect": "^1.4.0",
+    "@leizm/web": "^1.7.0",
     "express": "^4.16.2",
     "feathers": "^2.2.3",
     "hapi": "^16.6.2",

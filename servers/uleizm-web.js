@@ -1,7 +1,7 @@
 'use strict';
 
 const http = require('uws').http;
-const { Connect, Router } = require('@leizm/connect');
+const { Connect, Router } = require('@leizm/web');
 
 const app = new Connect();
 const router = new Router();
@@ -18,5 +18,5 @@ router.get('/keep-alive', (ctx) => {
 });
 
 server.listen(8000, () => {
-  console.log('@leizm/connect demo app listening on port 8000!');
+  console.log('@leizm/web demo app listening on port 8000!');
 });

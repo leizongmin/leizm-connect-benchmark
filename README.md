@@ -7,7 +7,7 @@
 ## Installation
 
 ```bash
-git clone git@github.com:leizongmin/leizm-connect-benchmark.git && cd leizm-connect-benchmark
+git clone git@github.com:leizongmin/leizm-web-benchmark.git && cd leizm-web-benchmark
 yarn [install]
 ```
 
@@ -24,13 +24,13 @@ After finish the make tasks, look at benchmarks.txt file or your console output.
 Simple HTTP benchmark results (wrk) with `close` connection
 
 ```text
-26152.90 Requests/sec - uleizm-connect.js
+26152.90 Requests/sec - uleizm-web.js
 22450.96 Requests/sec - ukoa.js
 12820.36 Requests/sec - ufeathers.js
 12134.07 Requests/sec - uexpress.js
 5513.99 Requests/sec - micro.js
 4959.12 Requests/sec - rawnode.js
-4602.40 Requests/sec - leizm-connect.js
+4602.40 Requests/sec - leizm-web.js
 3675.19 Requests/sec - total/total.js
 3625.12 Requests/sec - koa.js
 3333.37 Requests/sec - express.js
@@ -44,14 +44,14 @@ Simple HTTP benchmark results (wrk) with `close` connection
 Simple HTTP benchmark results (wrk) with `keep-alive` connection
 
 ```text
-28487.77 Requests/sec - uleizm-connect.js
+28487.77 Requests/sec - uleizm-web.js
 28061.49 Requests/sec - uws.js
 24185.91 Requests/sec - ukoa.js
 12684.09 Requests/sec - micro.js
 12584.03 Requests/sec - uexpress.js
 12561.44 Requests/sec - ufeathers.js
 11023.34 Requests/sec - rawnode.js
-10139.57 Requests/sec - leizm-connect.js
+10139.57 Requests/sec - leizm-web.js
 7993.16 Requests/sec - koa.js
 7133.59 Requests/sec - total/total.js
 5494.80 Requests/sec - express.js
