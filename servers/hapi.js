@@ -3,10 +3,9 @@
 const Hapi = require('hapi');
 
 // Create a server with a host and port
-const server = new Hapi.Server();
-server.connection({ 
-    host: 'localhost', 
-    port: 8000 
+const server = new Hapi.Server({
+    host: 'localhost',
+    port: 8000
 });
 
 // Add the route
@@ -14,15 +13,17 @@ server.route([
 {
     method: 'GET',
     path:'/',
-    handler: (req, reply) => {
-        return reply('Hello World!').header('Connection', 'close');
+    handler: (req, h) => {
+        const res = h.response('Hello World!');
+        res.header('Connection', 'close');
+        return res;
     }
 },
 {
     method: 'GET',
     path:'/keep-alive',
-    handler: (req, reply) => {
-        return reply('Hello World!');
+    handler: (req, h) => {
+        return 'Hello World!';
     }
 }
 ]);

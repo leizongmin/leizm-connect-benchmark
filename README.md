@@ -8,7 +8,7 @@
 
 ```bash
 git clone git@github.com:leizongmin/leizm-web-benchmark.git && cd leizm-web-benchmark
-yarn [install]
+npm i
 ```
 
 ## How to run or automatically it can run after `yarn install`
