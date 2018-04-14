@@ -5,7 +5,7 @@ const http = require("http");
 http
   .createServer((req, res) => {
     if (req.url !== "/keep-alive") {
-      res.writeHead("Connection", "close");
+      res.setHeader("Connection", "close");
     }
     res.end("Hello World!");
   })
