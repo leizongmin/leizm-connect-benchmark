@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
-const micro = require('micro');
+const micro = require("micro");
 
 const server = micro((req, res) => {
-  if (req.url !== '/keep-alive') {
-    res.setHeader('Connection', 'close');
+  if (req.url !== "/keep-alive") {
+    res.setHeader("Connection", "close");
   }
-  return 'Hello World!';
+  return "Hello World!";
 });
 
 server.listen(8000);

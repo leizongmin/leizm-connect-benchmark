@@ -1,3 +1,3 @@
-'use strict';
+"use strict";
 
-require('total.js').http('release');
+require("total.js").http("release");

@@ -1,38 +1,37 @@
-'use strict';
+"use strict";
 
-const Hapi = require('hapi');
+const Hapi = require("hapi");
 
 // Create a server with a host and port
 const server = new Hapi.Server({
-    host: 'localhost',
-    port: 8000
+  host: "localhost",
+  port: 8000
 });
 
 // Add the route
 server.route([
-{
-    method: 'GET',
-    path:'/',
+  {
+    method: "GET",
+    path: "/",
     handler: (req, h) => {
-        const res = h.response('Hello World!');
-        res.header('Connection', 'close');
-        return res;
+      const res = h.response("Hello World!");
+      res.header("Connection", "close");
+      return res;
     }
-},
-{
-    method: 'GET',
-    path:'/keep-alive',
+  },
+  {
+    method: "GET",
+    path: "/keep-alive",
     handler: (req, h) => {
-        return 'Hello World!';
+      return "Hello World!";
     }
-}
+  }
 ]);
 
 // Start the server
 server.start(err => {
-
-    if (err) {
-        throw err;
-    }
-    console.log('Server running at:', server.info.uri);
+  if (err) {
+    throw err;
+  }
+  console.log("Server running at:", server.info.uri);
 });

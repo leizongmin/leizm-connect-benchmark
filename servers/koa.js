@@ -1,14 +1,14 @@
-'use strict';
+"use strict";
 
-const Koa = require('koa');
+const Koa = require("koa");
 
 const app = new Koa();
 
 app.use(ctx => {
-  if (ctx.req.url !== '/keep-alive') {
-    ctx.set('Connection', 'close');
+  if (ctx.req.url !== "/keep-alive") {
+    ctx.set("Connection", "close");
   }
-  ctx.body = 'Hello World!';
+  ctx.body = "Hello World!";
 });
 
 app.listen(8000);
