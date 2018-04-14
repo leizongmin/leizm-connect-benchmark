@@ -1,5 +1,5 @@
 all:
-  @./run http.js
+	@./run http.js
 	@./run express.js
 	@./run leizm-web.js
 	@./run hapi.js
