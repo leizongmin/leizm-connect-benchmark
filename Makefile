@@ -10,10 +10,6 @@ all:
 	@./run micro.js
 	@./run sails/sails.js
 	@./run feathers.js
-	@./run uws.js
-	@./run ukoa.js
-	@./run uexpress.js
-	@./run ufeathers.js
 	@echo | tee -a benchmarks.txt
 	@echo 'Simple HTTP benchmark results (wrk) with close connection' | tee -a benchmarks.txt
 	@sort -nr results.txt | tee -a benchmarks.txt
@@ -29,10 +25,6 @@ all:
 	@./run micro.js keep-alive
 	@./run sails/sails.js keep-alive
 	@./run feathers.js keep-alive
-	@./run uws.js keep-alive
-	@./run ukoa.js keep-alive
-	@./run uexpress.js keep-alive
-	@./run ufeathers.js keep-alive
 	@echo | tee -a benchmarks.txt
 	@echo 'Simple HTTP benchmark results (wrk) with keep-alive connection' | tee -a benchmarks.txt
 	@sort -nr results.txt | tee -a benchmarks.txt
