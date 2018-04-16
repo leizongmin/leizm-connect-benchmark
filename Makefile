@@ -11,7 +11,6 @@ all:
 	@./run sails/sails.js
 	@./run feathers.js
 	@./run uws.js
-	@./run uleizm-web.js
 	@./run ukoa.js
 	@./run uexpress.js
 	@./run ufeathers.js
@@ -31,7 +30,6 @@ all:
 	@./run sails/sails.js keep-alive
 	@./run feathers.js keep-alive
 	@./run uws.js keep-alive
-	@./run uleizm-web.js keep-alive
 	@./run ukoa.js keep-alive
 	@./run uexpress.js keep-alive
 	@./run ufeathers.js keep-alive
