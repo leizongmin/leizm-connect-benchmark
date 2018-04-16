@@ -24,47 +24,39 @@ After finish the make tasks, look at benchmarks.txt file or your console output.
 Simple HTTP benchmark results (wrk) with `close` connection
 
 ```text
-26152.90 Requests/sec - uleizm-web.js
-22450.96 Requests/sec - ukoa.js
-12820.36 Requests/sec - ufeathers.js
-12134.07 Requests/sec - uexpress.js
-5513.99 Requests/sec - micro.js
-4959.12 Requests/sec - rawnode.js
-4602.40 Requests/sec - leizm-web.js
-3675.19 Requests/sec - total/total.js
-3625.12 Requests/sec - koa.js
-3333.37 Requests/sec - express.js
-3175.13 Requests/sec - feathers.js
-2811.85 Requests/sec - restify.js
-1638.57 Requests/sec - hapi.js
-1066.74 Requests/sec - sails/sails.js
-159.65 Requests/sec - uws.js
+8390.82 Requests/sec - restify.js
+6983.61 Requests/sec - micro.js
+6905.93 Requests/sec - leizm-web.js
+6578.84 Requests/sec - http.js
+6415.45 Requests/sec - rawnode.js
+5414.55 Requests/sec - koa.js
+5263.68 Requests/sec - total/total.js
+4926.65 Requests/sec - feathers.js
+4829.53 Requests/sec - express.js
+4401.81 Requests/sec - hapi.js
+1640.84 Requests/sec - sails/sails.js
 ```
 
 Simple HTTP benchmark results (wrk) with `keep-alive` connection
 
 ```text
-28487.77 Requests/sec - uleizm-web.js
-28061.49 Requests/sec - uws.js
-24185.91 Requests/sec - ukoa.js
-12684.09 Requests/sec - micro.js
-12584.03 Requests/sec - uexpress.js
-12561.44 Requests/sec - ufeathers.js
-11023.34 Requests/sec - rawnode.js
-10139.57 Requests/sec - leizm-web.js
-7993.16 Requests/sec - koa.js
-7133.59 Requests/sec - total/total.js
-5494.80 Requests/sec - express.js
-5235.98 Requests/sec - restify.js
-3451.93 Requests/sec - feathers.js
-2308.08 Requests/sec - hapi.js
-1343.64 Requests/sec - sails/sails.js
+12279.14 Requests/sec - restify.js
+11630.27 Requests/sec - micro.js
+11584.45 Requests/sec - leizm-web.js
+11298.82 Requests/sec - http.js
+10730.96 Requests/sec - rawnode.js
+9415.69 Requests/sec - koa.js
+9178.14 Requests/sec - total/total.js
+7024.93 Requests/sec - express.js
+6038.25 Requests/sec - hapi.js
+4772.14 Requests/sec - feathers.js
+1640.60 Requests/sec - sails/sails.js
 ```
 
 ### Hardware used
 
-* Virtual CPU a7769a6388d5 2394.454 MHz x 1
-* 1Gb RAM
+* Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz x 4
+* 8 Gb RAM
 
 ### Version
 
