@@ -1,17 +1,15 @@
 "use strict";
 
-const { Connect, Router } = require("@leizm/web");
+const { Application } = require("@leizm/web");
 
-const app = new Connect();
-const router = new Router();
-app.use("/", router);
+const app = new Application();
 
-router.get("/", ctx => {
+app.router.get("/", ctx => {
   ctx.response.setHeader("Connection", "close");
   ctx.response.end("Hello World!");
 });
 
-router.get("/keep-alive", ctx => {
+app.router.get("/keep-alive", ctx => {
   ctx.response.end("Hello World!");
 });
 
