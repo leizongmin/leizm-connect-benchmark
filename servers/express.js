@@ -13,6 +13,6 @@ app.get("/keep-alive", (req, res) => {
   res.send("Hello World!");
 });
 
-app.listen(8000, () => {
-  console.log("Express demo app listening on port 8000!");
+app.listen(Number(process.env.PORT), () => {
+  console.log("Express demo app listening on port %d!", Number(process.env.PORT));
 });

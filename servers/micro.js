@@ -9,4 +9,4 @@ const server = micro((req, res) => {
   return "Hello World!";
 });
 
-server.listen(8000);
+server.listen(Number(process.env.PORT));

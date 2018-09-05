@@ -13,6 +13,6 @@ app.use("/keep-alive", (req, res) => {
   res.send("Hello World!");
 });
 
-app.listen(8000, () => {
-  console.log("Feathers demo app listening on port 8000!");
+app.listen(Number(process.env.PORT), () => {
+  console.log("Feathers demo app listening on port %d!", Number(process.env.PORT));
 });

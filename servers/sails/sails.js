@@ -2,4 +2,4 @@
 
 process.chdir(__dirname);
 
-require("sails").lift({ port: 8000 });
+require("sails").lift({ port: Number(process.env.PORT) });

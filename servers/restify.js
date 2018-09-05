@@ -15,6 +15,6 @@ server.get("/keep-alive", (req, res, next) => {
   next();
 });
 
-server.listen(8000, () => {
+server.listen(Number(process.env.PORT), () => {
   console.log("%s listening at %s", server.name, server.url);
 });
