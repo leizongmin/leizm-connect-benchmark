@@ -8,12 +8,9 @@
   "dependencies": {
     "@leizm/web": "^2.3.1",
     "express": "^4.16.2",
-    "feathers": "^2.2.3",
     "hapi": "^17.5.4",
     "koa": "^2.5.2",
     "micro": "^9.3.3",
-    "restify": "^7.2.1",
-    "sails": "^1.0.2",
-    "total.js": "^3.0.0"
+    "restify": "^7.2.1"
   }
 }
