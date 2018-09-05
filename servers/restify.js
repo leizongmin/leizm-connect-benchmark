@@ -5,14 +5,14 @@ const restify = require("restify");
 const server = restify.createServer();
 
 server.get("/", (req, res, next) => {
-  res.set("Connection", "close");
+  res.setHeader("Connection", "close");
   res.send("Hello World!");
-  next();
+  return next();
 });
 
 server.get("/keep-alive", (req, res, next) => {
   res.send("Hello World!");
-  next();
+  return next();
 });
 
 server.listen(Number(process.env.PORT), () => {
