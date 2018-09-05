@@ -11,15 +11,19 @@ git clone git@github.com:leizongmin/leizm-web-benchmark.git && cd leizm-web-benc
 npm i
 ```
 
-## How to run or automatically it can run after `yarn install`
+## Run
 
 ```bash
-make
+./start
 ```
 
-After finish the make tasks, look at benchmarks.txt file or your console output.
+After finish the benchmark tasks, look at benchmarks.txt file or your console output.
 
 ## Result of benchmarks without measuring cpu/memory usage
+
+This runs a benchmark for 5 minutes, using 12 threads, and keeping 400 HTTP connections open.
+
+Time:
 
 Simple HTTP benchmark results (wrk) with `close` connection
 
@@ -63,8 +67,3 @@ Simple HTTP benchmark results (wrk) with `keep-alive` connection
 * Node v8.9.0
 * Ubuntu 16.04.4 LTS x86_64 OS
 * Linux version 4.4.0-87-generic
-
-### Notes
-
-* Some frameworks used with [uWebSockets](https://github.com/uWebSockets/uWebSockets) server.
-* This [runs](https://github.com/hbakhtiyor/node-frameworks-benchmark/blob/master/run#L9-L12) a benchmark for 5 minutes, using 12 threads, and keeping 400 HTTP connections open.
