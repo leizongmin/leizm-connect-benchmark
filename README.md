@@ -21,7 +21,7 @@ After finish the benchmark tasks, look at benchmarks.txt file or your console ou
 
 ## Result of benchmarks without measuring cpu/memory usage
 
-This runs a benchmark for 5 minutes, using 12 threads, and keeping 400 HTTP connections open.
+This runs a benchmark for 10 minutes, using 12 threads, and keeping 400 HTTP connections open.
 
 Time:
 
@@ -59,11 +59,11 @@ Simple HTTP benchmark results (wrk) with `keep-alive` connection
 
 ### Hardware used
 
-* Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz x 4
+* Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz x 4
 * 8 Gb RAM
 
 ### Version
 
-* Node v8.9.0
-* Ubuntu 16.04.4 LTS x86_64 OS
-* Linux version 4.4.0-87-generic
+* Node v8.9.4
+* Ubuntu 16.04.5 LTS x86_64 OS
+* Linux version 4.4.0-134-generic

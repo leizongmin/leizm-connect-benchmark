@@ -6,13 +6,23 @@ pid=$!
 
 echo "run $1 after 10s..."
 sleep 10
-echo "running..."
 
+## 预热
+echo "\twarm up..."
 wrk "http://127.0.0.1:$PORT/$2" \
   -d 1m \
+  -c 400 \
+  -t 12
+
+# 真实测试
+echo "\tbenchmark..."
+wrk "http://127.0.0.1:$PORT/$2" \
+  -d 10m \
   -c 400 \
   -t 12 \
   | grep 'Requests/sec' \
   | awk -v server="$server" '{ print $2 " Requests/sec - " server }' >> results.txt
 
 kill $pid
+
+echo "finished $1"
