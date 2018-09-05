@@ -2,11 +2,11 @@
 
 const http = require("http");
 
-http
-  .createServer((req, res) => {
-    if (req.url !== "/keep-alive") {
-      res.setHeader("Connection", "close");
-    }
-    res.end("Hello World!");
-  })
-  .listen(Number(process.env.PORT));
+const server = http.createServer((req, res) => {
+  if (req.url !== "/keep-alive") {
+    res.setHeader("Connection", "close");
+  }
+  res.end("Hello World!");
+});
+
+server.listen(Number(process.env.PORT));
