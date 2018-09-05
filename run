@@ -23,6 +23,8 @@ wrk $url \
   | grep 'Requests/sec' \
   | awk -v server="$server" '{ print $2 " Requests/sec - " server }'
 
+sleep 10
+
 # 真实测试
 echo "    benchmark..."
 wrk $url \
