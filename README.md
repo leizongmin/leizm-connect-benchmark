@@ -21,7 +21,7 @@ After finish the benchmark tasks, look at benchmarks.txt file or your console ou
 
 ## Result of benchmarks without measuring cpu/memory usage
 
-This runs a benchmark for 5 minutes, 400 connections.
+This runs a benchmark for 5 minutes, 200 connections.
 
 Time:
 
