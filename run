@@ -13,7 +13,9 @@ echo "    warm up..."
 wrk $url \
   -d 1m \
   -c 400 \
-  -t 12
+  -t 12 \
+  | grep 'Requests/sec' \
+  | awk -v server="$server" '{ print $2 " Requests/sec - " server }'
 
 # 真实测试
 echo "    benchmark..."
