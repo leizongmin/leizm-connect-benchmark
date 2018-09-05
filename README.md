@@ -28,42 +28,34 @@ Time:
 Simple HTTP benchmark results (wrk) with `close` connection
 
 ```text
-8390.82 Requests/sec - restify.js
-6983.61 Requests/sec - micro.js
-6905.93 Requests/sec - leizm-web.js
-6578.84 Requests/sec - http.js
-6415.45 Requests/sec - rawnode.js
-5414.55 Requests/sec - koa.js
-5263.68 Requests/sec - total/total.js
-4926.65 Requests/sec - feathers.js
-4829.53 Requests/sec - express.js
-4401.81 Requests/sec - hapi.js
-1640.84 Requests/sec - sails/sails.js
+8743.19 Requests/sec - micro.js
+8465.83 Requests/sec - restify.js
+7996.10 Requests/sec - http.js
+7495.24 Requests/sec - koa.js
+7196.94 Requests/sec - leizm-web.js
+5107.74 Requests/sec - express.js
+4770.93 Requests/sec - hapi.js
 ```
 
 Simple HTTP benchmark results (wrk) with `keep-alive` connection
 
 ```text
-12279.14 Requests/sec - restify.js
-11630.27 Requests/sec - micro.js
-11584.45 Requests/sec - leizm-web.js
-11298.82 Requests/sec - http.js
-10730.96 Requests/sec - rawnode.js
-9415.69 Requests/sec - koa.js
-9178.14 Requests/sec - total/total.js
-7024.93 Requests/sec - express.js
-6038.25 Requests/sec - hapi.js
-4772.14 Requests/sec - feathers.js
-1640.60 Requests/sec - sails/sails.js
+15464.42 Requests/sec - restify.js
+13744.85 Requests/sec - micro.js
+13297.22 Requests/sec - http.js
+11295.15 Requests/sec - koa.js
+11192.17 Requests/sec - leizm-web.js
+7116.18 Requests/sec - hapi.js
+6978.99 Requests/sec - express.js
 ```
 
 ### Hardware used
 
-* Intel(R) Core(TM) i5-7500 CPU @ 3.40GHz x 4
+* Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz x 4
 * 8 Gb RAM
 
 ### Version
 
-* Node v8.9.4
+* Node v8.11.3
 * Ubuntu 16.04.5 LTS x86_64 OS
 * Linux version 4.4.0-134-generic
