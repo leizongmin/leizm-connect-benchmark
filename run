@@ -28,7 +28,7 @@ sleep 10
 # 真实测试
 echo "    benchmark..."
 wrk $url \
-  -d 10m \
+  -d 5m \
   -c $connections \
   -t $threads \
   | grep 'Requests/sec' \

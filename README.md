@@ -21,7 +21,7 @@ After finish the benchmark tasks, look at benchmarks.txt file or your console ou
 
 ## Result of benchmarks without measuring cpu/memory usage
 
-This runs a benchmark for 10 minutes, using 12 threads, and keeping 400 HTTP connections open.
+This runs a benchmark for 5 minutes, using 12 threads, and keeping 400 HTTP connections open.
 
 Time:
 
