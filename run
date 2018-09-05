@@ -3,20 +3,21 @@
 server="$1"
 NODE_ENV=production node ./servers/$server &
 pid=$!
+url="http://127.0.0.1:$PORT/$2"
 
 echo "run $1 after 10s..."
 sleep 10
 
 ## 预热
-echo "\twarm up..."
-wrk "http://127.0.0.1:$PORT/$2" \
+echo "    warm up..."
+wrk $url \
   -d 1m \
   -c 400 \
   -t 12
 
 # 真实测试
-echo "\tbenchmark..."
-wrk "http://127.0.0.1:$PORT/$2" \
+echo "    benchmark..."
+wrk $url \
   -d 10m \
   -c 400 \
   -t 12 \
