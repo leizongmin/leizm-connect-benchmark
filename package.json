@@ -1,9 +1,10 @@
 {
-  "name": "node-frameworks-benchmark",
+  "private": true,
+  "name": "@leizm/web-benchmark",
   "version": "1.0.0",
   "description": "Simple http benchmark for different nodejs frameworks using wrk",
-  "repository": "git@github.com:hbakhtiyor/node-frameworks-benchmark.git",
-  "author": "Abd ar-Rahman Hamidi <bakhtiyor.h@gmail.com>",
+  "repository": "git@github.com:leizongmin/leizm-web-benchmark.git",
+  "author": "Zongmin Lei <leizongmin@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@hapi/hapi": "^20.0.3",
