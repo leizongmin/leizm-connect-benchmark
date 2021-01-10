@@ -6,7 +6,7 @@ pid=$!
 
 url="http://127.0.0.1:$PORT/$2"
 connections=200
-threads=$(($(cat /proc/cpuinfo | awk '/^processor/{print $3}' | wc -l)-1))
+threads=2
 echo "url: $url"
 echo "connections: $connections"
 echo "threads: $threads"
