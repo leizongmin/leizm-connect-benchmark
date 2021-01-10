@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-* [wrk](https://github.com/wg/wrk) - how to install [guide](https://github.com/wg/wrk/wiki/Installing-Wrk-on-Linux)
+- [wrk](https://github.com/wg/wrk) - how to install [guide](https://github.com/wg/wrk/wiki/Installing-Wrk-on-Linux)
 
 ## Installation
 
@@ -28,34 +28,33 @@ Time:
 Simple HTTP benchmark results (wrk) with `close` connection
 
 ```text
-8743.19 Requests/sec - micro.js
-8465.83 Requests/sec - restify.js
-7996.10 Requests/sec - http.js
-7495.24 Requests/sec - koa.js
-7196.94 Requests/sec - leizm-web.js
-5107.74 Requests/sec - express.js
-4770.93 Requests/sec - hapi.js
+8370 Requests/sec - micro.js
+8185 Requests/sec - http.js
+7612 Requests/sec - koa.js
+7302 Requests/sec - leizm-web.js
+5871 Requests/sec - restify.js
+5800 Requests/sec - hapi.js
+3602 Requests/sec - express.js
 ```
 
 Simple HTTP benchmark results (wrk) with `keep-alive` connection
 
 ```text
-15464.42 Requests/sec - restify.js
-13744.85 Requests/sec - micro.js
-13297.22 Requests/sec - http.js
-11295.15 Requests/sec - koa.js
-11192.17 Requests/sec - leizm-web.js
-7116.18 Requests/sec - hapi.js
-6978.99 Requests/sec - express.js
+22780 Requests/sec - http.js
+18899 Requests/sec - micro.js
+17704 Requests/sec - koa.js
+16793 Requests/sec - leizm-web.js
+11603 Requests/sec - restify.js
+11428 Requests/sec - hapi.js
+5012 Requests/sec - express.js
 ```
 
 ### Hardware used
 
-* Intel(R) Xeon(R) CPU E5-2682 v4 @ 2.50GHz x 4
-* 8 Gb RAM
+- Intel(R) Xeon(R) CPU E5-2620 v4 @ 2.10GHz x 8
+- 8G RAM
 
 ### Version
 
-* Node v8.11.3
-* Ubuntu 16.04.5 LTS x86_64 OS
-* Linux version 4.4.0-134-generic
+- Node v14.15.4
+- Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-48-generic x86_64)
