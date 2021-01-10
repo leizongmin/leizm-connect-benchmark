@@ -6,10 +6,10 @@
   "author": "Abd ar-Rahman Hamidi <bakhtiyor.h@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@hapi/hapi": "^19.1.1",
-    "@leizm/web": "^2.7.0",
+    "@hapi/hapi": "^20.0.3",
+    "@leizm/web": "^2.7.2",
     "express": "^4.17.1",
-    "koa": "^2.11.0",
+    "koa": "^2.13.1",
     "micro": "^9.3.4",
     "restify": "^8.5.1"
   }
